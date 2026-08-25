@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>rythm — Privacy Policy</title>
+  <meta name="description" content="rythm privacy policy: your health data stays on your device by default." />
+  <style>
+    :root { --main: #bd4444; --secondary: #f1dec4; --sage: #73976a; --sage-dark: #677e61; --ink: #3b3229; --soft: #6b6257; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--secondary); color: var(--ink); line-height: 1.6; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+    header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+    .logo { width: 40px; height: 40px; border-radius: 10px; background: var(--main); color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 20px; }
+    h1 { font-size: 26px; margin: 0; }
+    .updated { color: var(--soft); font-size: 13px; margin-bottom: 28px; }
+    h2 { font-size: 18px; margin: 28px 0 8px; color: var(--sage-dark); }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0; padding-left: 22px; }
+    li { margin: 4px 0; }
+    a { color: var(--main); }
+    .card { background: #fff; border: 1px solid rgba(0,0,0,.06); border-radius: 12px; padding: 24px; margin-top: 24px; }
+    .card b { color: var(--sage-dark); }
+    footer { margin-top: 40px; color: var(--soft); font-size: 13px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">◢</div>
+      <h1>rythm — Privacy Policy</h1>
+    </header>
+    <p class="updated">Effective for version 1.0.0 · Last updated August 12, 2026</p>
+
+    <p><b>rythm</b> is a wellness and performance platform. This policy explains what we collect, why, and — most importantly — where your data lives. The short version: <b>your physiology stays on your device by default</b>. We do not sell, rent, or trade your health data, and we never have.</p>
+
+    <h2>1. What we collect</h2>
+    <ul>
+      <li><b>Account details</b> — name, email, and (if you sign in with Google) your profile picture, only to identify you.</li>
+      <li><b>Profile &amp; physiology</b> — date of birth, sex, weight, height and training goal, which feed the recovery, strain, VO₂max and AI-metric engines.</li>
+      <li><b>Health metrics</b> — heart rate, HRV, resting HR, steps, sleep, SpO₂, skin temperature, and workout GPS tracks you record or connect.</li>
+      <li><b>Phone number (optional)</b> — used only to match friends from your contacts. It is never shown publicly and never used for marketing.</li>
+    </ul>
+
+    <h2>2. Where your data lives</h2>
+    <p>By default, all of your data is stored <b>locally on your device</b> (in your browser or the app's local storage) and never leaves it. Nothing is uploaded unless you explicitly opt in:</p>
+    <ul>
+      <li><b>Cloud sync</b> — an opt-in switch in Settings. When you turn it on, your metrics, workouts and habits are backed up to your own Supabase project, protected by row-level security so only your account can read them. It's off until you flip it on.</li>
+      <li><b>AI features</b> — the AI coach and score reviews may send a text summary of your physiological context (recovery, sleep, strain, habits) to a model provider to generate a reply. This happens per-request and only for the features you use.</li>
+    </ul>
+    <p>GPS routes are stored only on your device. When you sign in with Google, Google's own privacy policy applies to the sign-in itself.</p>
+
+    <div class="card">
+      <b>Our commitment.</b> Your health data is yours. We process it only to run the features you ask for, we never monetize it, and we give you one-tap export and one-tap delete from Settings → Data.
+    </div>
+
+    <h2>3. Export &amp; delete</h2>
+    <ul>
+      <li><b>Export</b> — download all of your data anytime (Settings → Data → Export) as JSON and CSV.</li>
+      <li><b>Delete</b> — delete your account and all stored data, including cloud rows, anytime (Settings → Data → Delete account).</li>
+      <li><b>Clearing the browser</b> — because data is local by default, clearing this site's storage also removes it.</li>
+    </ul>
+
+    <h2>4. Security</h2>
+    <p>Authentication runs through Supabase Auth (Google sign-in is verified server-side), sync tables are protected by row-level security so each user can only touch their own rows, and server-side API keys never ship in the app bundle. No security system is perfect — we keep attack surface small precisely because your data is local-first.</p>
+
+    <h2>5. Your rights &amp; control</h2>
+    <ul>
+      <li><b>Access &amp; portability</b> — export your data anytime (above).</li>
+      <li><b>Deletion</b> — delete your account and all stored data anytime (above).</li>
+      <li><b>Correction</b> — edit your profile and metrics in Settings.</li>
+      <li><b>Consent</b> — every data path beyond local storage (cloud sync, AI, contacts matching) is opt-in, never default.</li>
+    </ul>
+
+    <h2>6. Not medical advice</h2>
+    <p>rythm is for training and wellness awareness, not diagnosis or treatment of any medical condition. Consult a qualified professional for medical decisions.</p>
+
+    <h2>7. Changes</h2>
+    <p>We may update this policy as the app evolves. Material changes will be noted in the app. Continued use after changes means you accept the updated policy.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions about this policy or your data? Use Settings → Send feedback in the app, or email <a href="mailto:privacy@rythm.app">privacy@rythm.app</a>.</p>
+
+    <footer>rythm — local-first by default · © 2026</footer>
+  </div>
+</body>
+</html>

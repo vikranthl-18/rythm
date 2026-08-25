@@ -1,0 +1,94 @@
+{
+  "expo": {
+    "name": "rythm (tester)",
+    "slug": "rythm-native",
+    "version": "1.0.0",
+    "scheme": "rythm",
+    "orientation": "portrait",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#f1dec4",
+    "primaryColor": "#bd4444",
+    "updates": {
+      "url": "https://u.expo.dev/c0c9dd64-6b99-453b-8fdd-4582146f8e09",
+      "enabled": true,
+      "fallbackToCacheTimeout": 0
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.rythm.ios",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "rythm reads your health data (heart rate, HRV, sleep, workouts) to compute your Recovery, Strain and Rythm Score. Your data stays on your device by default.",
+        "NSHealthUpdateUsageDescription": "rythm does not write health data.",
+        "NSLocationWhenInUseUsageDescription": "rythm uses your location only while you record outdoor workouts, to draw your route on the map."
+      }
+    },
+    "android": {
+      "package": "app.rythm",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.health.READ_HEART_RATE",
+        "android.permission.health.READ_RESTING_HEART_RATE",
+        "android.permission.health.READ_HEART_RATE_VARIABILITY",
+        "android.permission.health.READ_STEPS",
+        "android.permission.health.READ_TOTAL_CALORIES_BURNED",
+        "android.permission.health.READ_SLEEP",
+        "android.permission.health.READ_EXERCISE",
+        "android.permission.health.READ_OXYGEN_SATURATION",
+        "android.permission.health.READ_BODY_TEMPERATURE",
+        "android.permission.health.READ_ACTIVE_CALORIES_BURNED",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "@kayzmann/expo-healthkit",
+        {
+          "healthShareUsageDescription": "rythm reads your health data (heart rate, HRV, sleep, workouts) to compute your Recovery, Strain and Rythm Score. Your data stays on your device by default.",
+          "healthUpdateUsageDescription": "rythm does not write health data."
+        }
+      ],
+      "react-native-health-connect",
+      "./plugins/with-health-connect-delegate",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "minSdkVersion": 26
+          }
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "rythm uses your location only while you record outdoor workouts, to draw your route on the map."
+        }
+      ],
+      "expo-web-browser",
+      "@sentry/react-native",
+      [
+        "expo-notifications",
+        {
+          "color": "#bd4444"
+        }
+      ]
+    ],
+    "extra": {
+      "stage": "preview",
+      "eas": {
+        "projectId": "c0c9dd64-6b99-453b-8fdd-4582146f8e09"
+      }
+    },
+    "owner": "vikranthlak18s-team"
+  }
+}

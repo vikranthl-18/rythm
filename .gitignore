@@ -1,0 +1,32 @@
+# ---- secrets ----------------------------------------------------------------
+# Never commit real credentials. .env.example is the only env file that is
+# safe to commit (placeholders only). Everything else stays local.
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+!.env.example
+
+# ---- build output -----------------------------------------------------------
+dist/
+dist-ssr/
+build/
+*.local
+
+# ---- dependencies -----------------------------------------------------------
+node_modules/
+
+# ---- logs & OS noise --------------------------------------------------------
+*.log
+npm-debug.log*
+.DS_Store
+
+# ---- agent workspace ---------------------------------------------------------
+.freebuff/
+
+# ---- editor / IDE -----------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.vercel
