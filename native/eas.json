@@ -15,9 +15,9 @@
       "channel": "preview",
       "env": {
         "EXPO_PUBLIC_APP_STAGE": "preview",
-        "EXPO_PUBLIC_SUPABASE_URL": "https://wbakpinvcvtfgeteqwml.supabase.co",
-        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_eV8YMZQA7APaUM0NQk9Jkw_gC7neFHM",
-        "EXPO_PUBLIC_WEB_URL": "https://rythm-rythm7.vercel.app"
+        "EXPO_PUBLIC_SUPABASE_URL": "",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "",
+        "EXPO_PUBLIC_WEB_URL": ""
       }
     },
     "preview-simulator": {
